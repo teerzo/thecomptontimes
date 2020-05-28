@@ -105,11 +105,11 @@ export default function Header(props) {
 
                 </div>
                 <div className="links">
-                    <a href="/sports"> Galactic </a>
-                    <a href="/sports"> Imperial </a>
-                    <a href="/sports"> Rebel </a>
-                    <a href="/sports"> PVP </a>
-                    <a href="/sports"> Cantina </a>
+                    <a href="/cantina"> Cantina </a>
+                    <a href="/drama"> Drama </a>
+                    <a href="/pvp"> PVP </a>
+                    <a href="/opinion"> Opinion  </a>
+                    <a href="/roleplay"> RP </a>
                 </div>
             </div>
         </header >
