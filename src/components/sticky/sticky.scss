@@ -1,0 +1,23 @@
+.sticky {
+    position: relative;
+    background-color: #aaaaaa;
+    overflow: hidden;
+    .sticky-inner {
+        // display: grid;
+        // // grid-template-columns: 1fr 2fr 1fr;
+        // background-color: #ffffff;
+        // border-bottom: 1px solid #aaaaaa;
+        // // background-color: blue;
+        // text-align: center;
+
+        &.active {
+            position: fixed;
+            top: 41px;
+            left: 0;
+            right: 100px;
+            max-width: 100px;
+            z-index: 1;
+            // background-color: green;
+        }
+    }
+}

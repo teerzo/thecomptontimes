@@ -9,6 +9,8 @@ import imgCompton from '../../images/compton.png';
 import imgHood from '../../images/hood.png';
 
 
+import Link from 'components/link';
+
 export default function Header(props) {
 
     const [sticky, setSticky] = useState(false);
@@ -105,13 +107,14 @@ export default function Header(props) {
 
                 </div>
                 <div className="links">
-                    <a href="/cantina"> Cantina </a>
-                    <a href="/drama"> Drama </a>
-                    <a href="/pvp"> PVP </a>
-                    <a href="/opinion"> Opinion  </a>
-                    <a href="/roleplay"> RP </a>
+                    <Link path="/s/all"> All </Link>
+                    <Link path="/s/cantina"> Cantina </Link>
+                    <Link path="/s/drama"> Drama </Link>
+                    <Link path="/s/pvp"> PVP </Link>
+                    <Link path="/s/opinion"> Opinion </Link>
+                    <Link path="/s/roleplay"> Roleplay </Link>
                 </div>
             </div>
-        </header >
+        </header>
     )
 }

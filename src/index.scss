@@ -1,0 +1,49 @@
+body,
+html {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+#root {
+  height: 100%;
+}
+.App {
+  height: 100%;
+  // overflow: hidden;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.route {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+
+  @media (max-width: 850px) {
+    grid-template-columns: 1px 1fr 1px;
+  }
+}
+
+.ad {
+  position: relative;
+  // border: 1px solid red;
+  overflow: hidden;
+  max-height: 300px;
+
+  .ad-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+ 
+}

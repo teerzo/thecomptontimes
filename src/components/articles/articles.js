@@ -5,19 +5,24 @@ import { FaGlobe, FaCalendar, FaTemperatureHigh } from "react-icons/fa";
 
 import './articles.scss';
 
-import imgTemp from '../images/temp.png';
+import imgTemp from 'images/temp.png';
 
-import jsonArticles from '../data/articles.json';
+import jsonArticles from 'json/articles.json';
 
 export default function Articles(props) {
-
     const [articles, setArticles] = useState();
 
 
     useEffect(() => {
         console.log('Articles', jsonArticles);
         if (jsonArticles) {
-            setArticles(jsonArticles);
+            let arr = [];
+            arr = arr.concat(jsonArticles);
+            arr = arr.concat(jsonArticles);
+            arr = arr.concat(jsonArticles);
+            arr = arr.concat(jsonArticles);
+            arr = arr.concat(jsonArticles);
+            setArticles(arr);
         }
     }, [])
 
